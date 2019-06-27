@@ -1,37 +1,12 @@
-## Welcome to GitHub Pages
+# rosetta-carpet
 
-You can use the [editor on GitHub](https://github.com/rawlik/rosetta-carpet/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
+The Talbot carpet in many languages!
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+The source code and resulting carpets are hosted on the webpage [https://rawlik.github.io/rosetta-carpet/](https://rawlik.github.io/rosetta-carpet/).
 
-### Markdown
-
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
-
-```markdown
-Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
+The script `publish_code.py` automatically generates the website based on the source code in the `src` directory. It assumes that the code is a single file named after the programming language: `LANGUAGE_NAME.extension`. It also expects to find a `docs/carpets/LANGUAGE_NAME.png` file. The code is printed on the website using the template:
+````markdown
+```LANGUAGE_NAME
+content of the src/LANGUAGE_NAME.extension file
 ```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/rawlik/rosetta-carpet/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+````
