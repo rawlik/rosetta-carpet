@@ -1,0 +1,8 @@
+[package]
+name = "rust"
+version = "0.1.0"
+authors = ["Michal Rawlik <mmrawlik@gmail.com>"]
+edition = "2018"
+
+[dependencies]
+plotters = "^0.2.2"
