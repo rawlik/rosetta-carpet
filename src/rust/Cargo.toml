@@ -6,3 +6,6 @@ edition = "2018"
 
 [dependencies]
 plotters = "^0.2.2"
+rustfft = "3.0.0"
+itertools-num = "0.1.1"
+ndarray = "0.13.0"
